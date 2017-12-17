@@ -1,0 +1,77 @@
+{
+    "name": "react-spinkit",
+    "version": "1.0.0",
+    "description": "A react port of SpinKit",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dotamir/react-SpinKit.git"
+    },
+    "author": "Julian Ćwirko",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dotamir/react-SpinKit/issues"
+    },
+    "homepage": "https://github.com/dotamir/react-SpinKit",
+    "keywords": [
+        "react-component",
+        "react",
+        "spinkit",
+        "spinner",
+        "loaders"
+    ],
+    "options": {
+        "mocha": "--require scripts/mocha_runner src/**/__tests__/**/*.js"
+    },
+    "scripts": {
+        "prepublish": "npm run build-js && npm run build-css",
+        "build-js": "babel --plugins transform-es2015-modules-umd src --ignore __tests__ --out-dir ./dist",
+        "build-css": "node-sass src/styles/ -o dist/styles",
+        "lint": "eslint ./src",
+        "lintfix": "eslint ./src --fix",
+        "testonly": "mocha $npm_package_options_mocha",
+        "test": "npm run lint && npm run testonly",
+        "test-watch": "npm run testonly -- --watch --watch-extensions js",
+        "precommit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier --single-quote --write",
+            "git add"
+        ]
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-eslint": "^6.1.2",
+        "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "chai": "^3.5.0",
+        "classnames": "^2.2.5",
+        "enzyme": "^2.9.1",
+        "eslint": "^2.13.1",
+        "eslint-plugin-babel": "^3.3.0",
+        "eslint-plugin-react": "^4.3.0",
+        "husky": "^0.14.3",
+        "jsdom": "^8.5.0",
+        "lint-staged": "^6.0.0",
+        "mocha": "^2.5.3",
+        "node-sass": "^4.7.2",
+        "nodemon": "^1.12.5",
+        "prettier": "^1.9.2",
+        "prop-types": "^15.6.0",
+        "react": "^15.6.2",
+        "react-addons-test-utils": "^15.6.2",
+        "react-dom": "^15.6.2",
+        "sinon": "^1.17.7"
+    },
+    "peerDependencies": {
+        "react": "~0.14.8 || ^15.0.0",
+        "react-dom": "~0.14.8 || ^15.0.0"
+    },
+    "dependencies": {
+        "babel-runtime": "^6.26.0"
+    }
+}
