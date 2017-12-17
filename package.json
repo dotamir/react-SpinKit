@@ -1,12 +1,12 @@
 {
-    "name": "react-spinkit",
+    "name": "react-spinkits",
     "version": "1.0.0",
     "description": "A react port of SpinKit",
     "repository": {
         "type": "git",
         "url": "https://github.com/dotamir/react-SpinKit.git"
     },
-    "author": "Julian Ćwirko",
+    "author": "Amirhossein Eslami (@dotamir)",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/dotamir/react-SpinKit/issues"

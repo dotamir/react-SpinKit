@@ -21,8 +21,8 @@ describe('Full DOM Rendering', () => {
 });
 
 describe('Static Rendered Markup', () => {
-  it('renders rotating-plane1 `div`', () => {
-    const wrapper = render(<Loader type="rotating-plane" />);
-    expect(wrapper.find('.rotating-plane1')).to.have.length(0);
+  it('renders rect1 `div`', () => {
+    const wrapper = render(<Loader type="rect" />);
+    expect(wrapper.find('.rect1')).to.have.length(1);
   });
 });
