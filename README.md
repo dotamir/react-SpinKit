@@ -6,11 +6,13 @@ the package is based on [SpinKit](https://github.com/tobiasahlin/SpinKit) by [to
 ```npm install react-spinkits --save```
 
 ## Usage
-import the component
+import the component and css file
 ```js
 import Loader from 'react-spinkits'
+import 'react-spinkits/dist/styles/styles.css'
 
-<Loader type="rect" />
+// and use like this
+<Loader type="rect" /> 
 ```
 
 ## License
