@@ -1,9 +1,10 @@
 # React SpinKit
 
-the package is based on [SpinKit](https://github.com/tobiasahlin/SpinKit) by [tobiasahlin](https://github.com/tobiasahlin) which is really great when you want a spinner. and this one is prepared to be used on a react project as simple component.
+the package is based on [SpinKit](https://github.com/tobiasahlin/SpinKit) by [tobiasahlin](https://github.com/tobiasahlin) which is really great when you want a spinner. and this one is prepared to be used on a react project as a simple component.
 
 ## Install
-```npm install react-spinkits --save```
+```bash
+npm install react-spinkits --save```
 
 ## Usage
 import the component
