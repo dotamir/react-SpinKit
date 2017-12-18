@@ -1,4 +1,5 @@
 # React SpinKit
+[![Build Status](https://travis-ci.org/dotamir/react-SpinKit.svg?branch=master)](https://travis-ci.org/dotamir/react-SpinKit)
 
 the package is based on [SpinKit](https://github.com/tobiasahlin/SpinKit) by [tobiasahlin](https://github.com/tobiasahlin) which is really great when you want a spinner. and this one is prepared to be used as a simple react component. 
 
