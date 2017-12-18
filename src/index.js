@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+// import './styles/styles.css';
 
 class Loader extends React.Component {
   static propTypes = {
